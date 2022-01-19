@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/app_background">
+
+    <Button
+        android:id="@+id/btnSimple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Simple dialog"
+        app:layout_constraintBottom_toTopOf="@+id/btnMultiChoice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnMultiChoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Multi choice"
+        app:layout_constraintBottom_toTopOf="@+id/btnSingleChoice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSimple" />
+
+    <Button
+        android:id="@+id/btnSingleChoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="single choice"
+        app:layout_constraintBottom_toTopOf="@+id/btnRoundedAlert"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMultiChoice" />
+
+    <Button
+        android:id="@+id/btnCustom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="custom Alert"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRoundedAlert" />
+
+    <Button
+        android:id="@+id/btnRoundedAlert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rounded Alert"
+        app:layout_constraintBottom_toTopOf="@+id/btnCustom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSingleChoice" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
